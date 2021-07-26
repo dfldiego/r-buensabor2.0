@@ -1,0 +1,5 @@
+node_modules/*
+coverage/*
+serviceWorker.js
+.eslintrc.js
+*.sh
