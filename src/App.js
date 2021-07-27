@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
+import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import HttpsRedirect from 'react-https-redirect';
+import routes from './routes';
 
 function App() {
-  return (
-    <Fragment>
-      <h1>adasd</h1>
-    </Fragment>
-  );
+  const content = useRoutes(routes);
+
+  return <HttpsRedirect>{content}</HttpsRedirect>;
 }
 
 export default App;
