@@ -1,10 +1,22 @@
 import React from 'react';
+import { Box } from '@material-ui/core';
 
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <>
+      <Box
+        sx={{
+          minHeight: '100vh',
+          /*eslint no-undef: "error"*/
+          /*eslint-env node*/
+          backgroundImage: `url(${
+            process.env.PUBLIC_URL + '/images/hamburguesa1.jpg'
+          })`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover'
+        }}
+      ></Box>
+    </>
   );
 };
 
