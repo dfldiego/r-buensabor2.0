@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header';
-
+import Header from './Header';
+import { Box } from '@material-ui/core';
 const home = () => {
   return (
     <>
-      <Header />
+      <Box>
+        <Header />
+      </Box>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
@@ -13,9 +14,12 @@ const Header = () => {
             process.env.PUBLIC_URL + '/images/hamburguesa1.jpg'
           })`,
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          zindex: -1
         }}
-      ></Box>
+      >
+        <Navbar />
+      </Box>
     </>
   );
 };
